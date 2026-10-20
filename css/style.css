@@ -1,0 +1,4 @@
+/* fade the background color when it changes */
+body {
+    transition: background-color 1s ease;
+}

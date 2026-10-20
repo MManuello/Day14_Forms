@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two truths and a Lie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: beige;">
+    <h1> Matteo's Truth and Lie Game</h1>
+    <hr>
+
+    <h2> Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname"> First Name:</label> <br/> 
+        <input type="text" name="fname" id="fname"> <br/>
+        <label for="lname"> Last Name:</label> <br/>
+        <input type="text" name="lname" id="lname"><br/>
+        <label for="age">Age:</label><br/>
+        <input type="number" name="age" id="age"> <br/>
+    </form>
+    <br /> 
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size: x-large;"> Welcome!</p>
+<hr>
+    <h2> Warm up trivia question</h2>
+    <p> What is the only food that can't go bad?</p>
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate" value="chocolate">
+        <label for="chocolate">Chocolate</label><br/>
+        <input type="radio" name="trivia1" id="tuna" value="tuna">
+        <label for="tuna">Tuna</label><br/>
+        <input type="radio" name="trivia1" id="honey" value="honey">
+        <label for="honey">Honey</label><br/>
+    </form>
+    <input type="button" value="SUBMIT" onclick="trivia1();">
+    <p id="trivia1-anwser" style="font-size: x-large;"></p>
+<hr>
+    <h2> Two Truths and a Lie</h2>
+    <p> Two of these are true. Which one is the lie?</p>
+    <form action="">
+        <input type="radio" name="ttl" id="ski" value="ski">
+        <label for="ski">I love to ski</label><br/>
+        <input type="radio" name="ttl" id="bone" value="bone">
+        <label for="bone">I broke a bone skiing</label><br/>
+        <input type="radio" name="ttl" id="rocket" value="rocket">
+        <label for="rocket">I am making a rocket engine with 80N of thrust</label><br/>
+    </form>
+    <input type="button" value="SUBMIT" onclick="truthLie();">
+    <p id="ttl-answer" style="font-size: x-large;"></p>
+<hr>
+    <h2> Two Truths and a Lie: Hydrogen</h2>
+    <p> Two of these are true. Which one is the lie?</p>
+    <form action="">
+        <input type="radio" name="ttl2" id="h2gen" value="h2gen">
+        <label for="h2gen">I built a hydrogen generator that splits water with electrolysis</label><br/>
+        <input type="radio" name="ttl2" id="esp" value="esp">
+        <label for="esp">My hydrogen generator is run by two ESP32 microcontrollers</label><br/>
+        <input type="radio" name="ttl2" id="leak" value="leak">
+        <label for="leak">My electrolyzer cell worked perfectly on the first try</label><br/>
+    </form>
+    <input type="button" value="SUBMIT" onclick="truthLie2();">
+    <p id="ttl2-answer" style="font-size: x-large;"></p>
+
+
+
+    <script src="js/truth.js"></script>
+</body>
+</html>
